@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chatgpt-tab-bridge"
+version = "0.6.5"
+description = "A local bridge between Python programs and multiple ChatGPT browser tabs."
+requires-python = ">=3.10"
+dependencies = ["websockets>=12.0,<16.0"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
